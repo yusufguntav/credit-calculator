@@ -50,6 +50,8 @@ func (c *Calculator) Credits(message string, opts Options) (int, error) {
 		return 1, nil
 	}
 
+	message = NormalizeMessage(message, opts.CharType)
+
 	length := c.cfg.BaseOverhead + c.messageLength(message, opts.CharType)
 
 	if opts.AddCancelLink {
