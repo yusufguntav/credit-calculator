@@ -6,7 +6,7 @@ var gsmExtended = map[rune]struct{}{
 
 var turkishExtended = map[rune]struct{}{
 	'\\': {}, '€': {}, '{': {}, '}': {}, '[': {}, '~': {}, ']': {}, '^': {}, '|': {},
-	'ş': {}, 'ğ': {}, 'ı': {}, 'Ş': {}, 'İ': {}, 'Ğ': {}, 'ç': {}, 'Ç': {}, 'ü': {}, 'Ü': {}, 'ö': {}, 'Ö': {},
+	'ş': {}, 'ğ': {}, 'ı': {}, 'Ş': {}, 'İ': {}, 'Ğ': {}, 'ç': {},
 }
 
 func countWithExtended(s string, ext map[rune]struct{}) int {
